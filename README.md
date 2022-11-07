@@ -1,1 +1,1 @@
-# m2-projeto-em-equipe
+# Projeto MeaPetz
