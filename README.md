@@ -6,7 +6,7 @@
 
 ## 🦴 Moblie
  
-<div align="center"><img width="500" src="https://drive.google.com/file/d/1JMSKxvNwdCvLG1f03VymzIc88qytaeSN/view?usp=share_link"></div>
+<div align="center"><img width="500" src=""></div>
  
 ## 🦴 Tela de Login
 
