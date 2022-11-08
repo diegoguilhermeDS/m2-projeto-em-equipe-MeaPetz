@@ -44,6 +44,14 @@ body{
     justify-content: center;
 }
 
+.mainList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 .card{
     background-color: #fff;
     width: 90%;
@@ -56,12 +64,19 @@ body{
     padding: 0 5%;
 }
 
-.mainList{
+.info-pet{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6%;
+    height: 70%;
 }
+
+.pet-name, .pet-species{
+    color: var(--color-text-card);
+}
+
 
 .div-pet-profile{
     width: 70px;
@@ -106,4 +121,43 @@ body{
 
 .logout-move{
     margin-left: -0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+.empty-profile{
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: #a6a9b1;
+}
+
+.empty-info-pet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23%;
+    height: 70%;
+}
+
+.empty-pet-name, .empty-pet-species{
+    background-color: #a6a9b1;
+    width: 80px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.empty-pet-profile{
+    width: 70px;
+    height: 70px;
+    background-color: #a6a9b1;
+    border-radius: 50%;
 }
