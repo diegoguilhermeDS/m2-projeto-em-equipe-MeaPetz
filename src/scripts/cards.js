@@ -56,5 +56,5 @@ function profileCard(profile){
 
 export{
     cardPets,
-    profileCard
+    profileCard,
 }
