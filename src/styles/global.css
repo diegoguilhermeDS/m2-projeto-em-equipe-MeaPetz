@@ -10,10 +10,7 @@
   --color-grey-300: #b3bbc7;
   --color-grey-400: #f0f3f7;
   --color-white: #FFFFFF;
-<<<<<<< HEAD
   --color-black:#000000;
-=======
->>>>>>> feature/buttons-model
   --color-feedback-alert: #eb5757;
   --color-feedback-sucess: #087f5b;
 
@@ -23,6 +20,7 @@
   --font-size3: 1.25rem;
   --font-size4: 1rem;
   --font-size5: 0.875rem;
+  --font-size6: .75rem;
 
   /* Gap */
   --gap-1: 1.75rem;
