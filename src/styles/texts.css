@@ -1,0 +1,79 @@
+/* font-1 */
+.font-1-regular {
+    font-size: var(--font-size1);
+    font-weight: 400;
+}
+
+.font-1-semibold {
+    font-size: var(--font-size1);
+    font-weight: 600;
+}
+
+.font-1-bold {
+    font-size: var(--font-size1);
+    font-weight: 700;
+}
+
+/* font-2 */
+.font-2-regular {
+    font-size: var(--font-size2);
+    font-weight: 400;
+}
+
+.font-2-semibold {
+    font-size: var(--font-size2);
+    font-weight: 600;
+}
+
+.font-2-bold {
+    font-size: var(--font-size2);
+    font-weight: 700;
+}
+
+/* font-3 */
+.font-3-regular {
+    font-size: var(--font-size3);
+    font-weight: 400;
+}
+
+.font-3-semibold {
+    font-size: var(--font-size3);
+    font-weight: 600;
+}
+
+.font-3-bold {
+    font-size: var(--font-size3);
+    font-weight: 700;
+}
+
+/* font-4 */
+.font-4-regular {
+    font-size: var(--font-size4);
+    font-weight: 400;
+}
+
+.font-4-semibold {
+    font-size: var(--font-size4);
+    font-weight: 600;
+}
+
+.font-4-bold {
+    font-size: var(--font-size4);
+    font-weight: 700;
+}
+
+/* font-5 */
+.font-5-regular {
+    font-size: var(--font-size5);
+    font-weight: 400;
+}
+
+.font-5-semibold {
+    font-size: var(--font-size5);
+    font-weight: 600;
+}
+
+.font-5-bold {
+    font-size: var(--font-size5);
+    font-weight: 700;
+}
