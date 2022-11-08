@@ -65,7 +65,7 @@ input {
     padding: .625rem;
     outline: none;
     border: none;
-    color: #fff;
+    background-color: #fff;
 }
 
 .btn-register {
@@ -77,4 +77,8 @@ input {
     background-color: #5188DB;
     color: #fff;
     border-radius: .5rem;
+}
+
+:disabled {
+    opacity: 40%;
 }
