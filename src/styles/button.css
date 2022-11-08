@@ -1,0 +1,53 @@
+.sun_icon{
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sun_icon:hover{
+    filter: brightness(0.70);
+}
+
+.moon_icon{
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.moon_icon:hover{
+    filter: brightness(0.70);
+}
+
+.form_btn, .edit_btn{
+    width:240px;
+    height:39px;
+    color:var(--color-white);
+    background-color:var(--color-brand-100);
+    border-radius:var(--radius-2);
+    border: none;
+    cursor: pointer;
+}
+
+.adopt_btn{
+    width:116px;
+    height:38px;
+    color:var(--color-grey-300);
+    background-color:var(--color-grey-400);
+    border-radius:var(--radius-2);
+    border: none;
+    cursor: pointer;
+}
+
+.adopt_btn:hover{
+    background-color:var(--color-brand-100);
+    color: var(--color-white);
+}
+
+@media (min-width:700px){
+    .form_btn, .edit_btn{
+    width: 418px;
+    height: 39px;
+    }
+}
