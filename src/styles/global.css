@@ -28,6 +28,13 @@
   --radius-50: 50%;
 }
 
+.dark-mode:root{
+  --color-brand-100: #5188db;
+  --color-grey-200: #1e1e1e;
+  --color-grey-300: #F0F3F7;
+  --color-grey-400: #1E1E1E;
+}
+
 * { 
     margin: 0;
     padding: 0;
