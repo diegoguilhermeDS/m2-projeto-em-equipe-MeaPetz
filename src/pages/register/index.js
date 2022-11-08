@@ -1,4 +1,5 @@
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
+import { register } from "../../scripts/requests/requestRegister.js"
 
 
 function eventRegister() {
@@ -24,7 +25,8 @@ function eventRegister() {
         btnRegister.innerHTML = `
         <img class="icon-search" src="../../assets/img/spinner.png" alt="icone de procura">
         `
-        
+
+        register(body, btnRegister)
     })
 }
 
