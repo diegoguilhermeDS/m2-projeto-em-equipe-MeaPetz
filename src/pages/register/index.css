@@ -82,3 +82,18 @@ input {
 :disabled {
     opacity: 40%;
 }
+
+.icon-search {
+    animation: searchAnimate 4s linear infinite;
+}
+
+
+
+@keyframes searchAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
