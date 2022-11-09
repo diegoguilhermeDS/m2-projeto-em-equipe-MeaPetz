@@ -34,7 +34,7 @@ main{
     padding: 2.5rem;
 }
 
-h1, p{
+p{
     color: var(--color-black);
     font-weight: 700;
 }
@@ -53,17 +53,6 @@ input{
     outline: none;
     border: none;
     background-color: var(--color-white);
-}
-
-#btn-login{
-    height: 2.375rem;
-    width: 100%;
-    padding: .625rem;
-    outline: none;
-    border: none;
-    background-color: var(--color-brand-100);
-    color: var(--color-white);
-    border-radius: var(--radius-2);
 }
 
 :disabled{
@@ -133,5 +122,14 @@ a{
     .pets-banner{
         display: block;
         margin: 0 8rem 7rem 0;
+    }
+
+    #moon-btn > svg > path {
+        fill: var(--color-brand-100);
+    }
+    #moon-btn{
+        position: relative;
+        left: 65rem;
+        top: -28rem;
     }
 }
