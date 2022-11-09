@@ -56,8 +56,8 @@ p{
     line-height: 2.5rem;
 }
 
-a{
-    color: var(--color-brand-100);
+#redirect-register{
+    color: #5188db;
     font-size: var(--font-size4);
     font-weight: 600;
 }
