@@ -48,15 +48,6 @@ p{
     margin-top: 1.875rem;
 }
 
-input{
-    height: 2.375rem;
-    max-width: 100%;
-    padding: 1.25rem;
-    outline: none;
-    border: none;
-    background-color: var(--color-white);
-}
-
 :disabled{
     opacity: 40%;
 }
