@@ -1,32 +1,20 @@
 import { darkMode } from "./darkMode.js";
-import { iconHome, iconUser, iconLogout, iconMoon, iconSun } from "./icons.js";
+import { iconHome, iconUser, iconLogout } from "./icons.js";
+import { logout } from "./logout.js";
 
 const itemsMenu = [
     {
         html: iconHome,
         href: "/src/pages/home",
-        isDarkMode: false,
     },
     {
         html: iconUser,
         href: "/src/pages/dashboard",
-        isDarkMode: false,
     },
     {
         html: iconLogout,
         href: "/src/pages/login",
-        isDarkMode: false,
-    },
-    {
-        html: iconMoon,
-        href: "",
-        isDarkMode: true,
-    },
-    {
-        html: iconSun,
-        href: "",
-        isDarkMode: true,
-    },
+    }
 ];
 
 function menu() {
@@ -41,8 +29,7 @@ function menu() {
     header.append(nav);
     nav.append(ul);
 
-    itemsMenu.forEach(({ html, href, isDarkMode }) => {
-        if (!isDarkMode) {
+    itemsMenu.forEach(({ html, href }) => {
         ul.insertAdjacentHTML(
             "beforeend",
             `
@@ -51,7 +38,6 @@ function menu() {
                 </li>
             `
         );
-        }
     });
 
     const buttonDarkMode = document.createElement("button");
@@ -61,6 +47,8 @@ function menu() {
 
     li.append(buttonDarkMode)
     ul.append(li)
+
+    logout()
 }
 
 export { menu };
