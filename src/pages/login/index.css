@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: var(--color-grey-400);
+}
+
+header{
+    background-color: var(--color-brand-100);
+    height: 12rem;
+    border-radius: var(--radius-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 7.5rem;
+    height: 5.375rem;
+}
+
+#moon-btn{
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    border: none;
+    outline: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+main{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+h1, p{
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+#form-login{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+    margin-top: 1.875rem;
+}
+
+input{
+    height: 2.375rem;
+    max-width: 100%;
+    padding: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-white);
+}
+
+#btn-login{
+    height: 2.375rem;
+    width: 100%;
+    padding: .625rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-brand-100);
+    color: var(--color-white);
+    border-radius: var(--radius-2);
+}
+
+:disabled{
+    opacity: 40%;
+}
+
+a{
+    color: var(--color-brand-100);
+    font-size: var(--font-size4);
+    font-weight: 600;
+}
+
+@media (min-width: 700px){
+    body{
+        height: 64rem;
+        width: 90rem;
+        display: flex;
+        
+    }
+
+    header{
+        height: 100%;
+        width: 30%;
+    }
+
+    section{
+        height: 100%;
+        width: 100%;
+    }
+}

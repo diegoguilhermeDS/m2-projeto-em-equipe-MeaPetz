@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="../../styles/styles.css">
     <link rel="stylesheet" href="index.css">
     <title>Cadastro | MeaPetz</title>
-    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/img/favicon-512x512.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <picture>
-            <img src="../../assets/img/Logo.svg" alt="image logo">
+            <img id="logo" src="../../assets/img/Logo.svg" alt="image logo">
         </picture>
-        <button><img src="../../assets/img/come-back.svg" alt="arrow icon"></button>
-        <button><img src="../../assets/img/moon.svg" alt="moon icon"></button>
+        <button class="btn-base" id="logout"><img src="../../assets/img/come-back.svg" alt="arrow icon"></button>
+        <button class="btn-base" id="dark-mode"><img src="../../assets/img/moon.svg" alt="moon icon"></button>
     </header>
-    <main>
+    <main class="container-main">
         <section>
             <h1>Cadastre-se</h1>
             <form id="form-register">
@@ -25,7 +25,7 @@
                 <input type="url" name="avatar_url" id="avatar_url" placeholder="URL da Imagem">
                 <input type="email" name="email" id="email" placeholder="E-mail">
                 <input type="password" name="password" id="password" placeholder="Senha">
-                <button type="submit">Cadastrar</button>
+                <button class="btn-register" type="submit" disabled>Cadastrar</button>
             </form>
         </section>
     </main>

@@ -1,0 +1,31 @@
+.brand-1 {
+    color: var(--color-brand-100);
+}
+
+.brand-2 {
+    color: var(--color-brand-200);
+}
+
+.grey-1 {
+    color: var(--color-grey-100);
+}
+
+.grey-2 {
+    color: var(--color-grey-200);
+}
+
+.grey-3 {
+    color: var(--color-grey-300);
+}
+
+.grey-4 {
+    color: var(--color-grey-400);
+}
+
+.sucess {
+    color: var(--color-feedback-sucess);
+}
+
+.alert {
+    color: var(--color-feedback-alert);
+}
