@@ -18,6 +18,8 @@
 
   --color-hover-items-menu: #b3bbc7; 
 
+  --color-bg-card: #FFFFFF;
+
 
   /* Font */
   --font-size1: 2rem;
@@ -42,9 +44,10 @@
   --color-text-card: #FFFFFF;
   --color-grey-200: #F0F3F7;
   --color-grey-300: #F0F3F7;
-  --color-grey-400: #1E1E1E;
+  --color-grey-400: #28292b;
   --color-white: #1E1E1E;
   --color-black:#FFFFFF;
+  --color-bg-card: #1E1E1E;
 }
 
 * { 
@@ -76,17 +79,17 @@
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: .375rem;
 }
 
 *::-webkit-scrollbar-track {
-  background: #fff;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--color-brand-100);
-  border-radius: 20px;
-  border: 3px solid #fff;
+  border-radius: 1.25rem;
+  border: .1875rem solid transparent;
 }
 
 body {
