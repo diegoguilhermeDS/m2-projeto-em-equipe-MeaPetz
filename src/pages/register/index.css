@@ -65,15 +65,6 @@ header {
     gap: var(--gap-2);
 }
 
-input {
-    height: 1.75rem;
-    width: 100%;
-    padding: .625rem;
-    outline: none;
-    border: none;
-    background-color: #fff;
-}
-
 .button-base {
     width: 100%;
 }
@@ -110,7 +101,7 @@ input {
 
     .section-form-register {
         padding-left: 28.125rem;
-        padding-top: 2.875rem;
+        padding-top: .375rem;
     }
 
     #form-register {

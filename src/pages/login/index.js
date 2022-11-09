@@ -1,7 +1,6 @@
 import { login } from "../../scripts/requests/login.js"
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
 
-
 function goRegisterPage() {
     const redirectBtn = document.getElementById("redirect-register")
 
@@ -12,7 +11,6 @@ function goRegisterPage() {
         }, 1000)
     })
 }
-
 
 function loginForm(){
     const form = document.querySelector("#form-login")
