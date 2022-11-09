@@ -15,7 +15,7 @@ async function renderMyProfile(){
 
     user.find(profile => profileCard(profile))   
 }
-renderMyProfile()
+
 
 
 
@@ -32,7 +32,6 @@ async function renderAllMyPets(){
         cardPets(pet)
     });    
 }
-renderAllMyPets()
 
 
 
@@ -100,6 +99,20 @@ async function userInfoToUpdate(){
 
     })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+renderMyProfile()
+renderAllMyPets()
 userInfoToUpdate()
 
 
