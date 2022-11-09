@@ -1,3 +1,12 @@
+.btn-base-icon {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sun_icon{
     width: 18px;
     height: 18px;
@@ -45,9 +54,22 @@
     color: var(--color-white);
 }
 
+.icon-search {
+    animation: searchAnimate 4s linear infinite;
+}
+
 @media (min-width:700px){
     .form_btn, .edit_btn{
     width: 418px;
     height: 39px;
+    }
+}
+
+@keyframes searchAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

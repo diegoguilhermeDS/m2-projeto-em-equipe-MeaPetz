@@ -9,7 +9,6 @@ function eventRegister() {
 
     eventButtonDisabled(btnRegister, formRegister)
 
-    console.log(btnRegister)
     formRegister.addEventListener("submit", (event) => {
         event.preventDefault()
 
