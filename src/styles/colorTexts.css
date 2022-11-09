@@ -29,3 +29,11 @@
 .alert {
     color: var(--color-feedback-alert);
 }
+
+.white {
+    color: var(--color-white);
+}
+
+.color-title {
+    color: var(--color-title);
+}

@@ -1,0 +1,31 @@
+.bg-brand-1 {
+    background-color: var(--color-brand-100);
+}
+
+.bg-brand-2 {
+    background-color: var(--color-brand-200);
+}
+
+.bg-grey-1 {
+    background-color: var(--color-grey-100);
+}
+
+.bg-grey-2 {
+    background-color: var(--color-grey-200);
+}
+
+.bg-grey-3 {
+    background-color: var(--color-grey-300);
+}
+
+.bg-grey-4 {
+    background-color: var(--color-grey-400);
+}
+
+.bg-sucess {
+    background-color: var(--color-feedback-sucess);
+}
+
+.bg-alert {
+    background-color: var(--color-feedback-alert);
+}

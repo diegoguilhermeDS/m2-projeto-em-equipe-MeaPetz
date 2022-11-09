@@ -2,21 +2,24 @@ function toast (status, message){
     const body = document.querySelector("body")
 
     const container = document.createElement("div")
-    container.classList.add("toast-container")
-
+    container.classList.add("modal-toast")
+    
     const icon = document.createElement("img")
-    icon.alt = "Mensagem de ${status}"
+    icon.alt = `Mensagem de ${status}`
+    
+    const msg = document.createElement("h3")
+    msg.classList.add("font-4-semibold", "white")
+    msg.innerText = message
 
     if (status == "Sucesso!"){
-        container.classList.add("success-toast")
-        icon.src = "../../img/success_icon.png"
-    }else{
-        container.classList.add("fail-toast")
-        icon.src = "../../img/error_icon.png"
+        container.classList.add("bg-sucess")
+        icon.src = "../../assets/img/icons/success_icon.png"
+
+    }else if(status == "Error!") {
+        container.classList.add("bg-alert")
+        icon.src = "../../assets/img/icons/error_icon.png"
     }
 
-    const msg = document.createElement("p")
-    msg.innerText = message
 
     container.append(icon, msg)
 
