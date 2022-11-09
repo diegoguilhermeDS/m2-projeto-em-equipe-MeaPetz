@@ -131,6 +131,10 @@ body{
     margin-left: -0.625rem;
 }
 
+.formDelete{
+    padding: 5%;
+}
+
 
 
 @media(min-width: 700px){
@@ -159,7 +163,7 @@ body{
     }
 
     .main{
-        margin-top: 27.75rem;
+        margin-top: 21.25rem;
         position: absolute;
         top: -3%;
         left: 0%;
@@ -189,11 +193,14 @@ body{
     }
     .modal-close{
         top: 10px;
-        left: 1118px;
+        left: 90%;
     }
     .modal-container{
         width: 30%;
         height: 70%;
+    }
+    .username{
+        color: #fff;
     }
 }
 
