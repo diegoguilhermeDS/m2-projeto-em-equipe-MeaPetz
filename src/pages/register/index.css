@@ -9,7 +9,7 @@ header {
     margin-bottom: 1.5rem;
 }
 
-#logout {
+#to-home {
     top: 1.25rem;
     left: 1.25rem;
     width: 18px;
@@ -19,7 +19,7 @@ header {
     z-index: 1;
 }
 
-#logout:hover {
+#to-home:hover {
     filter: brightness(0.70);
 }
 
@@ -74,19 +74,8 @@ input {
     background-color: #fff;
 }
 
-.btn-register {
-    height: 2.375rem;
+.button-base {
     width: 100%;
-    padding: .625rem;
-    outline: none;
-    border: none;
-    background-color: #5188DB;
-    color: #fff;
-    border-radius: .5rem;
-}
-
-:disabled {
-    opacity: 40%;
 }
 
 .img-petz {

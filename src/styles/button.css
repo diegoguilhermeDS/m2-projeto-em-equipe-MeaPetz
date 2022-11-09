@@ -58,6 +58,10 @@
     animation: searchAnimate 4s linear infinite;
 }
 
+:disabled {
+    opacity: 40%;
+}
+
 @media (min-width:700px){
     .button-base{
     width: 26.125rem;
