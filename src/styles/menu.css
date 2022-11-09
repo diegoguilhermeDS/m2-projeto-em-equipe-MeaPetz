@@ -1,0 +1,68 @@
+.header-main .logo {
+  display: none;
+}
+
+.nav-menu {
+  position: fixed;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.header-main .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-width: 17.5rem;
+  width: max-content;
+  padding: 0.9375rem 2rem;
+  border-radius: 0.625rem;
+  background-color: var(--color-brand-100);
+}
+
+.header-main .menu li,
+.header-main .menu a {
+  display: grid;
+  place-content: center;
+}
+
+.header-main .menu a {
+  cursor: pointer;
+}
+
+.header-main .menu a:hover svg path,
+.header-main .menu button:hover svg path {
+  transition: 0.3s ease;
+}
+
+.header-main .menu a:hover svg .hover-icon-stroke {
+  stroke: var(--color-hover-items-menu);
+}
+
+.header-main .menu a:hover svg .hover-icon-fill,
+.header-main .menu button:hover svg .hover-icon-fill {
+  fill: var(--color-hover-items-menu);
+}
+
+@media (min-width: 500px) {
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+  }
+
+  .header-main .logo {
+    display: block;
+  }
+
+  .nav-menu {
+    position: static;
+    width: max-content;
+  }
+}

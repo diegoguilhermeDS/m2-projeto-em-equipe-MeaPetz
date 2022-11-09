@@ -16,6 +16,8 @@
 
   --color-text-card: #0c4496;
 
+  --color-hover-items-menu: #b3bbc7; 
+
 
   /* Font */
   --font-size1: 2rem;
@@ -36,7 +38,7 @@
 }
 
 .dark-mode:root{
-  --color-brand-100: #5188db;
+  --color-brand-100: #0c4496;
   --color-text-card: #FFFFFF;
   --color-grey-200: #F0F3F7;
   --color-grey-300: #F0F3F7;
@@ -85,4 +87,8 @@
   background-color: var(--color-brand-100);
   border-radius: 20px;
   border: 3px solid #fff;
+}
+
+body {
+  background-color: var(--color-grey-400);
 }

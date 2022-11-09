@@ -62,6 +62,14 @@
     opacity: 40%;
 }
 
+.btn-icon-darkmode {
+    background-color: transparent;
+    border: none;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
 @media (min-width:700px){
     .button-base{
     width: 26.125rem;
