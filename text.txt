@@ -1,7 +1,0 @@
-    adoptedButton.addEventListener("click", async (e) => {
-        await deletingPetById(e.target.id)
-        setTimeout(() => {
-            window.location.reload()
-        }, 500)
-
-    })
