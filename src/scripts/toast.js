@@ -22,9 +22,8 @@ const toast = (status, message) => {
 
     body.appendChild(container)
 
-
 }
 
 export{
-    toast,
+    toast
 }
