@@ -27,7 +27,6 @@ async function register(body, btn) {
             /* message error */
         }
 
-        console.log(response)
         return response
     } catch(err) {
 

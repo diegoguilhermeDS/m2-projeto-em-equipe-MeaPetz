@@ -1,11 +1,15 @@
 @import url("../../styles/global.css");
 @import url("../../styles/texts.css");
+@import url("../../styles/modal.css");
 
 
 body{
     background-color: var(--color-grey-400);
 }
 
+.logoImg{
+    display: none;
+}
 
 .header{
     width: 100vw;
@@ -14,6 +18,10 @@ body{
     padding: 3% 0 0 94%;
     border-bottom-left-radius: .625rem;
     border-bottom-right-radius: .625rem;
+}
+
+.edit-user{
+    width: 1.25rem;
 }
 
 .profile{
@@ -34,7 +42,7 @@ body{
 }
 
 .main{
-    margin-top: 30%;
+    margin-top: 7.1875rem;
 }
 
 .username{
@@ -55,7 +63,7 @@ body{
 .card{
     background-color: #fff;
     width: 90%;
-    height: 112px;
+    height: 7rem;
     border-radius: .625rem;
     margin-bottom: 5%;
     display: flex;
@@ -79,8 +87,8 @@ body{
 
 
 .div-pet-profile{
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
 }
 
 .pet-profile{
@@ -125,6 +133,71 @@ body{
 
 
 
+@media(min-width: 700px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        height: 8.75rem;
+        position: fixed;
+        top: 22%;
+        left: 5%;
+        width: 90vw;
+        border-radius: .625rem;
+    }
+    .div-profile{
+        width: 40%;
+        position: absolute;
+        flex-direction: row;
+        top: 12%;
+        left: 5%;
+    }
+    .edit-user{
+        position: absolute;
+        top: 40%;
+        left: 90%;
+    }
+
+    .main{
+        margin-top: 27.75rem;
+        position: absolute;
+        top: -3%;
+        left: 0%;
+        width: 100%;
+    }
+
+    .footer-container{
+        width: 35vw;
+        top: 9%;
+        left: 60%;
+        height: 3.125rem;
+    }
+    .logoImg{
+        display: flex;
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        width: 4.375rem;
+    }
+    .card{
+        width: 43%;
+    }
+    .mainList{
+        gap: 4%;
+        overflow: scroll;
+        height: 50vh;
+    }
+    .modal-close{
+        top: 10px;
+        left: 1118px;
+    }
+    .modal-container{
+        width: 30%;
+        height: 70%;
+    }
+}
+
+
 
 
 
@@ -133,8 +206,8 @@ body{
 
 
 .empty-profile{
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #a6a9b1;
 }
@@ -150,14 +223,17 @@ body{
 
 .empty-pet-name, .empty-pet-species{
     background-color: #a6a9b1;
-    width: 80px;
-    height: 10px;
-    border-radius: 10px;
+    width: 5rem;
+    height: .625rem;
+    border-radius: .625rem;
 }
 
 .empty-pet-profile{
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     background-color: #a6a9b1;
     border-radius: 50%;
 }
+
+
+
