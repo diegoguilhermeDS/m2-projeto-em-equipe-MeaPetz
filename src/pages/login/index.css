@@ -30,8 +30,10 @@ header{
 }
 
 main{
+    display: flex;
     text-align: center;
-    padding: 2.5rem;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 p{

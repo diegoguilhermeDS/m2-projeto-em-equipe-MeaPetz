@@ -1,6 +1,6 @@
 
 
-async function login(body){
+async function login(body, button){
     await fetch("https://m2-api-adot-pet.herokuapp.com/session/login", {
         method: "POST",
         headers: {
@@ -11,6 +11,12 @@ async function login(body){
 
     .then(res =>{
         if(res.ok) {
+
+            setTimeout(() => {
+                button.innerHTML = "Cadastrar"
+                button.disabled = true
+            }, 1000)
+
             return res.json()
             
         }else{

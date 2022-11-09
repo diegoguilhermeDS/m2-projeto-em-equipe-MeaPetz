@@ -1,6 +1,18 @@
-// import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js";
 import { login } from "../../scripts/requests/login.js"
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
+
+
+function goRegisterPage() {
+    const redirectBtn = document.getElementById("redirect-register")
+
+    redirectBtn.addEventListener("click", (e) => {
+        e.preventDefault()
+        setTimeout(() => {
+            window.location.replace("../register/index.html")
+        }, 1000)
+    })
+}
+
 
 function loginForm(){
     const form = document.querySelector("#form-login")
@@ -17,8 +29,14 @@ function loginForm(){
         inputs.forEach(input => {
             body[input.name] = input.value
         })
-        login(body)
+
+        loginBtn.innerHTML = `
+        <img class="icon-search" src="../../assets/img/spinner.png" alt="icone de procura">
+        `
+
+        login(body, loginBtn)
     })
 }
 
+goRegisterPage()
 loginForm()
