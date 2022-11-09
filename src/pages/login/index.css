@@ -109,7 +109,8 @@ a{
     section{
         height: 100%;
         width: 68%;
-        padding: 100px;
+        padding-top: 10rem;
+        margin-right: 2rem;
     }
 
     #login-form{
