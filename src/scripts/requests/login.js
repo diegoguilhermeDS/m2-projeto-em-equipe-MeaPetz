@@ -29,7 +29,7 @@ async function login(body, button){
 
         //toast ("Cadastro realizado com sucesso!")
         localStorage.setItem("User", JSON.stringify(res.user))
-        localStorage.setItem("Token", res.token) 
+        localStorage.setItem("Token", JSON.stringify(res.token)) 
 
         setTimeout(() => {
             
