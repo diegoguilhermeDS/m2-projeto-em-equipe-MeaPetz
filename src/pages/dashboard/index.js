@@ -1,8 +1,11 @@
+import { menu } from "../../scripts/menu.js";
 import { cardPets, profileCard } from "../../scripts/cards.js";
 import { openModalEditUser } from "../../scripts/modal.js";
 import { readingAllMyPets } from "../../scripts/requests/readAllMyPets.js";
 import { readingMyProfile } from "../../scripts/requests/readProfile.js";
 import { updateUser } from "../../scripts/requests/requestUpdateUser.js";
+
+menu()
 
 
 async function renderMyProfile(){
