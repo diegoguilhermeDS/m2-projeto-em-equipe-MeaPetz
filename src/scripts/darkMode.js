@@ -1,10 +1,11 @@
 import { iconMoon, iconSun } from "./icons.js";
 
 function darkMode(btn) {
-    btn.classList = "btn-icon-darkmode";
+    btn.classList.add("btn-icon-darkmode");
     btn.innerHTML = iconMoon;
     const html = document.documentElement;
     let isDarkMode = localStorage.getItem("dark-mode");
+
 
     if (isDarkMode) {
         if (!html.classList.contains("dark-mode")) {

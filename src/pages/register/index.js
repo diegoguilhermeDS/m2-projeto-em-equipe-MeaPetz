@@ -1,5 +1,7 @@
+import { darkMode } from "../../scripts/darkMode.js"
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
 import { register } from "../../scripts/requests/requestRegister.js"
+import { toast } from "../../scripts/toast.js"
 
 
 function toHome() {
@@ -44,3 +46,7 @@ function eventRegister() {
 
 toHome()
 eventRegister()
+
+
+const btnDarkMode = document.getElementById("dark-mode")
+darkMode(btnDarkMode)
