@@ -70,6 +70,10 @@ input{
     opacity: 40%;
 }
 
+.redirect-box{
+    line-height: 2.5rem;
+}
+
 a{
     color: var(--color-brand-100);
     font-size: var(--font-size4);
@@ -108,17 +112,26 @@ a{
 
     section{
         height: 100%;
-        width: 68%;
-        padding-top: 10rem;
+        width: 70%;
+        padding-top: 7rem;
         margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    #login-form{
+    input{
+        width: 26.125rem;
+    }
+
+    .redirect-box{
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .pets-banner{
         display: block;
+        margin: 0 8rem 7rem 0;
     }
 }
