@@ -1,5 +1,5 @@
-@import url("../styles/global.css");
-@import url("../styles/texts.css");
-@import url("../styles/colorTexts.css");
-@import url("../styles/button.css");
-@import url("../styles/modal.css");
+@import "global.css";
+@import "texts.css";
+@import "colorTexts.css";
+@import "button.css";
+@import "modal.css";
