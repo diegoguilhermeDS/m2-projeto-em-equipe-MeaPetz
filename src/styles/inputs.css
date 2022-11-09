@@ -1,0 +1,13 @@
+.input-base {
+    width: 100%;
+    height: 2.375rem;
+    padding: .625rem;
+    border-radius: var(--radius-2);
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.input-base::placeholder {
+    color: #B3BBC7;
+}
