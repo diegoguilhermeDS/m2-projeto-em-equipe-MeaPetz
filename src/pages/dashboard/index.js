@@ -104,6 +104,15 @@ async function userInfoToUpdate(){
 
 
 
+function logout(){
+    const logout = document.querySelector(".logout")
+
+    logout.addEventListener("click", () => {
+        localStorage.clear()
+        window.location.replace("../login/index.html")
+    })
+}
+
 
 
 
@@ -114,6 +123,7 @@ async function userInfoToUpdate(){
 renderMyProfile()
 renderAllMyPets()
 userInfoToUpdate()
+logout()
 
 
 
