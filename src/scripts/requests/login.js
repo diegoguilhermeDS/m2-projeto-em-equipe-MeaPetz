@@ -1,5 +1,3 @@
-
-
 async function login(body, button){
     await fetch("https://m2-api-adot-pet.herokuapp.com/session/login", {
         method: "POST",

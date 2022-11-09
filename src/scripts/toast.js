@@ -1,4 +1,4 @@
-const toast = (status, message) => {
+function toast (status, message){
     const body = document.querySelector("body")
 
     const container = document.createElement("div")
@@ -24,6 +24,4 @@ const toast = (status, message) => {
 
 }
 
-export{
-    toast
-}
+export{ toast };
