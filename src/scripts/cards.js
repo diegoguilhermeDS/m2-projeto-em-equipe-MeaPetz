@@ -1,4 +1,6 @@
-
+import { deletingPetById } from "../scripts/requests/deletePetById.js";
+import { openModalEditUser } from "./modal.js";
+// import { readingAllMyPets } from "./requests/readAllMyPets.js";
 
 function cardPets(pet){
     const localRender = document.querySelector(".mainList")
@@ -20,6 +22,32 @@ function cardPets(pet){
     const adoptedButton =  document.createElement("img")
     adoptedButton.classList = "adopted-button"
     adoptedButton.src = "../../assets/img/liked.png"
+    adoptedButton.id = pet.id
+
+    adoptedButton.addEventListener("click", async (e) => {
+        openModalEditUser(formDelete)
+
+    })
+    
+    const formDelete = document.createElement("form")
+    formDelete.classList = "formModal formDelete"
+
+    const abandonmentAlert = document.createElement("h2")
+    abandonmentAlert.innerText = "Deseja mesmo Abandonar seu pet?"
+
+    const buttonAceptAbandonment = document.createElement("button")
+    buttonAceptAbandonment.innerText = "Sou do mal!"
+    buttonAceptAbandonment.classList = "button-submit-update font-5-semibold"
+
+    buttonAceptAbandonment.addEventListener("click", async (e) => {
+        e.preventDefault()
+        await deletingPetById(pet.id)
+        setTimeout(() => {
+            window.location.reload()
+        }, 500)
+    })
+
+    formDelete.append(abandonmentAlert, buttonAceptAbandonment)
 
     const divPetProfile =  document.createElement("div")
     divPetProfile.classList = "div-pet-profile"

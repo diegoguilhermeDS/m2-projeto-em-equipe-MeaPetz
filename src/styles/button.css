@@ -36,7 +36,7 @@
 }
 
 .button-brand-1{
-    color:var(--color-white);
+    color: #fff;
     background-color:var(--color-brand-100);
 }
 
@@ -60,6 +60,14 @@
 
 :disabled {
     opacity: 40%;
+}
+
+.btn-icon-darkmode {
+    background-color: transparent;
+    border: none;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
 }
 
 @media (min-width:700px){

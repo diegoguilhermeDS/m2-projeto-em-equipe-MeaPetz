@@ -5,7 +5,8 @@
     border-radius: var(--radius-2);
     outline: none;
     border: none;
-    background-color: #fff;
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 .input-base::placeholder {
