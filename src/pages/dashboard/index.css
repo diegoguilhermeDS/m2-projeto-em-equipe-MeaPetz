@@ -1,0 +1,163 @@
+@import url("../../styles/global.css");
+@import url("../../styles/texts.css");
+
+
+body{
+    background-color: var(--color-grey-400);
+}
+
+
+.header{
+    width: 100vw;
+    background-color: var(--color-brand-100);
+    height: 10vh;
+    padding: 3% 0 0 94%;
+    border-bottom-left-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+}
+
+.profile{
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+}
+
+.div-profile{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+.main{
+    margin-top: 30%;
+}
+
+.username{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mainList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    background-color: #fff;
+    width: 90%;
+    height: 112px;
+    border-radius: .625rem;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.info-pet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6%;
+    height: 70%;
+}
+
+.pet-name, .pet-species{
+    color: var(--color-text-card);
+}
+
+
+.div-pet-profile{
+    width: 70px;
+    height: 70px;
+}
+
+.pet-profile{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.footer-container{
+    background-color: var(--color-brand-100);
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 2.5rem;
+    border-radius: .625rem;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+}
+
+.home-button-caontainer{
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2%;
+}
+
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-move{
+    margin-left: -0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+.empty-profile{
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: #a6a9b1;
+}
+
+.empty-info-pet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23%;
+    height: 70%;
+}
+
+.empty-pet-name, .empty-pet-species{
+    background-color: #a6a9b1;
+    width: 80px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.empty-pet-profile{
+    width: 70px;
+    height: 70px;
+    background-color: #a6a9b1;
+    border-radius: 50%;
+}

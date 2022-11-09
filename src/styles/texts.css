@@ -77,3 +77,20 @@
     font-size: var(--font-size5);
     font-weight: 700;
 }
+
+/* font-6 */
+
+.font-6-regular{
+    font-size: var(--font-size6);
+    font-weight: 400;
+}
+
+.font-6-semibold{
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.font-6-bold{
+    font-size: var(--font-size6);
+    font-weight: 700;
+}
