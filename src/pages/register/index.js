@@ -2,6 +2,18 @@ import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
 import { register } from "../../scripts/requests/requestRegister.js"
 
 
+function toHome() {
+    const btnToHome = document.getElementById("to-home")
+
+    btnToHome.addEventListener("click", () => {
+        document.body.style.cursor = 'wait'
+        setTimeout(() => {
+            location.replace("../login/index.html")
+        }, 700)
+    })
+}
+
+
 function eventRegister() {
     const formRegister = document.querySelector("#form-register")
     const btnRegister  = formRegister.elements[4]
@@ -9,7 +21,6 @@ function eventRegister() {
 
     eventButtonDisabled(btnRegister, formRegister)
 
-    console.log(btnRegister)
     formRegister.addEventListener("submit", (event) => {
         event.preventDefault()
 
@@ -31,4 +42,5 @@ function eventRegister() {
 }
 
 
+toHome()
 eventRegister()
