@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 body{
     background-color: var(--color-grey-400);
 }
@@ -68,9 +66,10 @@ p{
 
 @media (min-width: 700px){
     body{
-        height: 64rem;
-        width: 90rem;
+        height: 100vh;
+        width: 100%;
         display: flex;
+        overflow: hidden;
     }
 
     header{
@@ -87,15 +86,13 @@ p{
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
     }
 
     section{
-        height: 100%;
         width: 70%;
-        padding-top: 7rem;
         margin-right: 2rem;
         display: flex;
         flex-direction: column;
@@ -114,7 +111,13 @@ p{
 
     .pets-banner{
         display: block;
-        margin: 0 8rem 7rem 0;
+        margin: 0 8rem 0rem 8.8125rem;
+        width: 34rem;
+        align-self: flex-start;
+    }
+
+    .pets-banner > img {
+        width: 34rem;
     }
 
     .dark-mode-color > svg > path {
@@ -122,8 +125,8 @@ p{
     }
 
     #moon-btn{
-        position: relative;
-        left: 65rem;
-        top: -28rem;
+        position: absolute;
+        left: 78rem;
+        top: 1.875rem;
     }
 }
