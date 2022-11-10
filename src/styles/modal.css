@@ -80,18 +80,26 @@
 .modal-toast {
     position: absolute;
     top: -100%;
-    right: 170px;
+    right: 0;
     border-radius: var(--radius-1);
     padding: 1.5rem 1.875rem;
     display: flex;
     align-items: center;
     gap: var(--gap-2);
     animation: 5s showModalInfor linear infinite;
+    width: 100%;
 }
 
 .modal-toast > img {
     width: 20px;
     height: 20px;
+}
+
+@media (min-width: 700px) {
+    .modal-toast {
+      right: 170px;
+      width: 23.125rem;
+    }
 }
 
 @keyframes showModalInfor {
