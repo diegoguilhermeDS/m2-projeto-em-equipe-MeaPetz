@@ -29,9 +29,13 @@ Projeto desenvolvido em grupo e proposto pela Kenzie Academy Brasil. Este projet
 
 # 💻 Desenvoldores:
 
-🦴  Maikol Santos
+🦴  Maikol Santos 
  * [GitHub]()
  * [LinkedIn]()
+
+🦴 Diego Guilherme
+* [GitHub](https://github.com/diegoguilhermeDS)
+* [LinkedIn](https://www.linkedin.com/in/diego-guilherme-616410200)
 
 ## :link: Link para o Projeto
 [MeaPetz](https://upgraded-dollop-314b6095.pages.github.io/src/pages/login/index.html)
