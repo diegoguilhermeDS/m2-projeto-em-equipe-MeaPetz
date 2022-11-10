@@ -1,3 +1,12 @@
+.btn-base-icon {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .dark-mode-icon{
     width: 18px;
     height: 18px;
@@ -27,7 +36,7 @@
 }
 
 .button-brand-1{
-    color:var(--color-white);
+    color: #fff;
     background-color:var(--color-brand-100);
 }
 
@@ -45,9 +54,36 @@
     color: var(--color-white);
 }
 
+.icon-search {
+    animation: searchAnimate 4s linear infinite;
+}
+
+:disabled {
+    opacity: 40%;
+    cursor:default;
+    pointer-events: none;
+}
+
+.btn-icon-darkmode {
+    background-color: transparent;
+    border: none;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
 @media (min-width:700px){
     .button-base{
     width: 26.125rem;
     height: 2.438rem;
+    }
+}
+
+@keyframes searchAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

@@ -3,14 +3,24 @@
 :root {
     /* Colors */
   --color-brand-100: #5188db;
+  --color-text-card: #5188db;
   --color-brand-200: #3769b2;
   --color-grey-100: #1e1e1e;
   --color-grey-200: #28292b;
   --color-grey-300: #b3bbc7;
   --color-grey-400: #f0f3f7;
   --color-white: #FFFFFF;
+  --color-black:#000000;
   --color-feedback-alert: #eb5757;
   --color-feedback-sucess: #087f5b;
+  --color-title: #5188db;
+
+  --color-text-card: #0c4496;
+
+  --color-hover-items-menu: #b3bbc7; 
+
+  --color-bg-card: #FFFFFF;
+
 
   /* Font */
   --font-size1: 2rem;
@@ -18,6 +28,7 @@
   --font-size3: 1.25rem;
   --font-size4: 1rem;
   --font-size5: 0.875rem;
+  --font-size6: .75rem;
 
   /* Gap */
   --gap-1: 1.75rem;
@@ -27,6 +38,18 @@
   --radius-1: .625rem;
   --radius-2: .3125rem;
   --radius-50: 50%;
+}
+
+.dark-mode:root{
+  --color-brand-100: #0c4496;
+  --color-text-card: #FFFFFF;
+  --color-grey-200: #F0F3F7;
+  --color-grey-300: #F0F3F7;
+  --color-grey-400: #28292b;
+  --color-white: #1E1E1E;
+  --color-black:#FFFFFF;
+  --color-bg-card: #1E1E1E;
+  --color-title: #ffffff;
 }
 
 * { 
@@ -43,3 +66,38 @@
     margin: 0 auto;
 }
 
+.color-test{
+  color: var(--color-test);
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 75rem;
+  }
+}
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-100) #fff;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: .375rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-brand-100);
+  border-radius: 1.25rem;
+  border: .1875rem solid transparent;
+}
+
+body {
+  background-color: var(--color-grey-400);
+}

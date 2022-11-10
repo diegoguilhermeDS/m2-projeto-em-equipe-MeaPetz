@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Home | MeaPetz</title>
-    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
-</head>
-<body>
-    
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/favicon-512x512.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main id="root">
+      <header class="header-main">
+        <img class="logo" src="/src/assets/img/logo-blue.png" alt="MeaPetz" />
+      </header>
+      <section class="container">
+        <input class="input-base" type="text" placeholder="Pesquisar Espécie">
+        <ul id="all-pets">
+        </ul>
+      </section>
+    </main>
     <script type="module" src="index.js"></script>
-</body>
+  </body>
 </html>
