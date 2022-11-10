@@ -3,7 +3,10 @@
 <div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/Mea%20Petz.png"></div>
 
 # :pencil: Descrição
-Projeto desenvolvido em grupo e proposto pela Kenzie Academy Brasil. Este projeto foi desenvolvido desde o design (com Figma) até o consumo da API
+Projeto desenvolvido em grupo e proposto pela Kenzie Academy Brasil. Este projeto foi desenvolvido desde o design (com Figma) até o consumo da API.
+
+Esse foi o primeiro projeto desenvolvido em grupo. Ao trabalharmos em grupo aprendemos com os erros e sentimos a satisfação/alegria de muitos acertos.
+
 
 #  :art: Layout 
 
@@ -30,8 +33,8 @@ Projeto desenvolvido em grupo e proposto pela Kenzie Academy Brasil. Este projet
 # 💻 Desenvoldores:
 
 🦴  Maikol Santos 
- * [GitHub]()
- * [LinkedIn]()
+ * [GitHub](https://github.com/MaikolSantos)
+ * [LinkedIn](https://www.linkedin.com/in/maikol-lourencon/)
 
 🦴 Diego Guilherme
 * [GitHub](https://github.com/diegoguilhermeDS)
