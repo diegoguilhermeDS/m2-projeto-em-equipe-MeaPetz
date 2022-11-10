@@ -1,4 +1,4 @@
-
+import { toast } from "../toast.js"
 
 const baseUrl = "https://m2-api-adot-pet.herokuapp.com/" 
 
@@ -17,7 +17,7 @@ async function readingAllMyPets(){
         return response
   
       } catch (error) {
-          console.log(error)        
+          toast("Error!", error)        
       }
 }
 

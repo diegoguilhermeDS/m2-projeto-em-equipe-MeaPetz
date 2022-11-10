@@ -1,3 +1,4 @@
+import { toast } from "../toast.js"
 
 
 async function adoption(body){
@@ -14,13 +15,13 @@ async function adoption(body){
 
         if(request.ok){
             const response = await request.json()
-            console.log("grande guri")
+            toast("Sucesso!", "Pet adotado com sucesso.")
             return response
         }else{
-            console.log(request)
+            toast("Error!", "Ops! algo deu errado na hora de adotar.")
         }
-    } catch(err){
-        console.log(err)
+    } catch(error){
+        toast("Error!", error)
     }
 }
 
