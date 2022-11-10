@@ -1,5 +1,3 @@
-
-
 .input-base {
   margin-bottom: 1.75rem;
   margin-top: 1.75rem;
@@ -76,6 +74,10 @@
 
 .card-image-wrapper img {
   width: 100%;
+}
+
+.communicate {
+  color: var(--color-black);
 }
 
 @media (min-width: 500px) {
