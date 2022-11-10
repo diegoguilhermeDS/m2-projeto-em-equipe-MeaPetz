@@ -1,6 +1,7 @@
 import { login } from "../../scripts/requests/login.js"
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
 import { darkMode } from "../../scripts/darkMode.js"
+import { introduction } from "../../scripts/introduction.js"
 
 function goRegisterPage() {
     const redirectBtn = document.getElementById("redirect-register")
@@ -42,3 +43,4 @@ darkMode(darkBtn)
 
 goRegisterPage()
 loginForm()
+introduction()

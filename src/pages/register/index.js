@@ -1,7 +1,10 @@
 import { darkMode } from "../../scripts/darkMode.js"
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
 import { register } from "../../scripts/requests/requestRegister.js"
+<<<<<<< HEAD
 
+=======
+>>>>>>> c0ea25c064e312a8b86004851efe7670f00956fc
 
 function toHome() {
     const btnToHome = document.getElementById("to-home")
@@ -13,7 +16,6 @@ function toHome() {
         }, 700)
     })
 }
-
 
 function eventRegister() {
     const formRegister = document.querySelector("#form-register")
