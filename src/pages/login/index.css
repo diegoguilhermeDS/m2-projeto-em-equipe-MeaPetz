@@ -48,6 +48,10 @@ p{
     margin-top: 1.875rem;
 }
 
+#form-login button {
+    width: 100%;
+}
+
 :disabled{
     opacity: 40%;
 }
