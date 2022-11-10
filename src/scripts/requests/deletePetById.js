@@ -1,4 +1,6 @@
 import { baseUrl } from "./readAllMyPets.js"
+import { toast } from "../toast.js"
+
 
 async function deletingPetById(id){
     const token = JSON.parse(localStorage.getItem("Token"))
@@ -13,16 +15,13 @@ async function deletingPetById(id){
         })
         
         if(request.ok){
-            console.log("sucess!", "Pet Abandonado :(")
-            //futuro toast
+            toast("Sucesso!", "Pet Abandonado :(")
 
         } else {
-            console.log("erro", "Algo deu errado! Tente novamete")
-            //futuro toast
+            toast("Error!", "Algo deu errado! Tente novamete")
         }
-    } catch (err) {
-        console.log(err)
-        // toast("erro", "Algo deu errado! Tente novamete")
+    } catch (error) {
+        toast("Error!", error)
     }
 }
 

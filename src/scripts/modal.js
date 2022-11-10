@@ -1,6 +1,3 @@
-
-
-
 function openModalEditUser(content){
 
     const body = document.querySelector("body")
