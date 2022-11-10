@@ -76,6 +76,10 @@
   width: 100%;
 }
 
+.communicate {
+  color: var(--color-black);
+}
+
 @media (min-width: 500px) {
   .container {
     max-width: 57rem;

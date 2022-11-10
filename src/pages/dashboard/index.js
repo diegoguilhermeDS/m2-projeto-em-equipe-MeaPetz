@@ -4,9 +4,9 @@ import { openModalEditUser } from "../../scripts/modal.js";
 import { readingAllMyPets } from "../../scripts/requests/readAllMyPets.js";
 import { readingMyProfile } from "../../scripts/requests/readProfile.js";
 import { updateUser } from "../../scripts/requests/requestUpdateUser.js";
+import { logout } from "../../scripts/logout.js";
 
 menu()
-
 
 async function renderMyProfile(){
     const localRender = document.querySelector(".div-profile");
@@ -98,16 +98,6 @@ async function userInfoToUpdate(){
 
     })
 }
-
-function logout(){
-    const logout = document.querySelector(".logout")
-
-    logout.addEventListener("click", () => {
-        localStorage.clear()
-        window.location.replace("../login/index.html")
-    })
-}
-
 
 renderMyProfile()
 renderAllMyPets()
