@@ -1,5 +1,5 @@
 body{
-    background-color: var(--color-grey-400);
+    background-color: var(--color-white);
 }
 
 .logoImg{
@@ -56,7 +56,7 @@ body{
 
 
 .card{
-    background-color: #fff;
+    background-color: var(--color-grey-400);
     width: 90%;
     height: 7rem;
     border-radius: .625rem;
