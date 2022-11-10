@@ -1,6 +1,5 @@
 import { iconHeart } from "../../scripts/icons.js";
 import { menu } from "../../scripts/menu.js";
-// import { readingAllMyPets } from "../../scripts/requests/readAllMyPets.js";
 import { readAllPets } from "../../scripts/requests/readAllPets.js";
 import { adoption } from "../../scripts/requests/requestAdoption.js";
 
@@ -38,7 +37,6 @@ async function renderHomeAllPets(){
         if(e.target.closest(".div-button-adopt").id === pet.id){
           const body = {}
           body[div.name] = pet.id
-          console.log(body)
           await adoption(body)
           setTimeout(() => {
             window.location.reload()
