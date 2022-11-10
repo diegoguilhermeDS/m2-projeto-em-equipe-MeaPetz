@@ -120,6 +120,7 @@ p{
     #moon-btn > svg > path {
         fill: var(--color-brand-100);
     }
+    
     #moon-btn{
         position: relative;
         left: 65rem;
