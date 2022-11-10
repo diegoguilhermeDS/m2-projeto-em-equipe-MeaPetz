@@ -117,10 +117,10 @@ p{
         margin: 0 8rem 7rem 0;
     }
 
-    #moon-btn > svg > path {
+    .dark-mode-color > svg > path {
         fill: var(--color-brand-100);
     }
-    
+
     #moon-btn{
         position: relative;
         left: 65rem;
