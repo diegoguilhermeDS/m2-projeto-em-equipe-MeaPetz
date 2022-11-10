@@ -37,7 +37,6 @@ async function renderHomeAllPets(list) {
           if (e.target.closest(".div-button-adopt").id === pet.id) {
             const body = {};
             body[div.name] = pet.id;
-            console.log(body);
             await adoption(body);
             setTimeout(() => {
               window.location.reload();

@@ -103,6 +103,10 @@ p{
         align-items: flex-start;
     }
 
+    #form-login{
+        width: 25rem;
+    }
+
     input{
         width: 26.125rem;
     }
