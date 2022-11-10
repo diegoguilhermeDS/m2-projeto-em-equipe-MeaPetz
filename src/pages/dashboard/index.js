@@ -4,130 +4,95 @@ import { openModalEditUser } from "../../scripts/modal.js";
 import { readingAllMyPets } from "../../scripts/requests/readAllMyPets.js";
 import { readingMyProfile } from "../../scripts/requests/readProfile.js";
 import { updateUser } from "../../scripts/requests/requestUpdateUser.js";
+import { logout } from "../../scripts/logout.js";
 
-menu()
+menu();
 
+async function renderMyProfile() {
+  const localRender = document.querySelector(".div-profile");
 
-async function renderMyProfile(){
-    const localRender = document.querySelector(".div-profile");
+  localRender.innerHTML = "";
 
-    localRender.innerHTML = ""
+  const profile = await readingMyProfile();
+  const user = [profile];
 
-    const profile = await readingMyProfile()
-    const user = [profile]
-
-    user.find(profile => profileCard(profile))   
+  user.find((profile) => profileCard(profile));
 }
 
+async function renderAllMyPets() {
+  const localRender = document.querySelector(".mainList");
 
+  localRender.innerHTML = "";
 
+  const pets = await readingAllMyPets();
 
-
-async function renderAllMyPets(){
-    const localRender = document.querySelector(".mainList");
-
-
-    localRender.innerHTML = ""
-
-    const pets = await readingAllMyPets()
-
-    pets.forEach(pet => {
-        cardPets(pet)
-    });    
+  pets.forEach((pet) => {
+    cardPets(pet);
+  });
 }
 
+async function userInfoToUpdate() {
+  const user = JSON.parse(localStorage.getItem("User"));
 
+  const main = document.querySelector(".main");
+  const editIcon = document.querySelector(".edit-user");
 
-async function userInfoToUpdate(){
-    const {avatar_url, name} = await updateUser()
+  editIcon.addEventListener("click", () => {
+    const formContainer = document.createElement("div");
+    formContainer.classList = "container-form";
 
+    const perfilAvatar = document.createElement("img");
+    perfilAvatar.classList = "avatar-edit-img";
+    perfilAvatar.src = user.avatar_url;
 
-    const main = document.querySelector(".main")
-    const editIcon = document.querySelector(".edit-user")
+    const EditDescription = document.createElement("p");
+    EditDescription.classList = "desc-edit font-5-semibold";
+    EditDescription.innerText = "Altere seus dados";
 
-    editIcon.addEventListener("click", () => {
-        const formContainer = document.createElement("div")
-        formContainer.classList = "container-form"
+    const form = document.createElement("form");
+    form.classList = "formModal";
 
-        const perfilAvatar = document.createElement("img")
-        perfilAvatar.classList = "avatar-edit-img"
-        perfilAvatar.src = avatar_url
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-        const EditDescription = document.createElement("p")
-        EditDescription.classList = "desc-edit font-5-semibold"
-        EditDescription.innerText = "Altere seus dados"
+      const inputs = [...form.elements];
 
-        const form = document.createElement("form")
-        form.classList = "formModal"
+      const body = {};
 
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault()
-            
-            const inputs  = [...form.elements]
-    
-            const body = {}
-    
-            inputs.forEach(input => {
-                if(input.tagName == "INPUT" && input.value !== "") {
-                    body[input.name] = input.value
-                }
-            })
-                console.log(body)
-                await updateUser(body)
-                window.location.reload()
-            
-    
-        })
+      inputs.forEach((input) => {
+        if (input.tagName == "INPUT" && input.value !== "") {
+          body[input.name] = input.value;
+        }
+      });
 
-        const inputName = document.createElement("input")
-        inputName.classList = "input-form-edit"
-        inputName.type = "text"
-        inputName.name = "name"
-        inputName.value = name
+      await updateUser(body);
+      window.location.reload();
+    });
 
-        const inputAvatar = document.createElement("input")
-        inputAvatar.classList = "input-form-edit"
-        inputAvatar.type = "url"
-        inputAvatar.name = "avatar_url"
-        inputAvatar.placeholder = avatar_url
+    const inputName = document.createElement("input");
+    inputName.classList = "input-form-edit";
+    inputName.type = "text";
+    inputName.name = "name";
+    inputName.value = user.name;
 
-        const buttonSubmit = document.createElement("button")
-        buttonSubmit.classList = "button-submit-update font-5-semibold"
-        buttonSubmit.type = "submit"
-        buttonSubmit.innerText = "Alterar"
+    const inputAvatar = document.createElement("input");
+    inputAvatar.classList = "input-form-edit";
+    inputAvatar.type = "url";
+    inputAvatar.name = "avatar_url";
+    inputAvatar.value = user.avatar_url;
 
-        form.append(EditDescription, inputName, inputAvatar, buttonSubmit)
-        formContainer.append(perfilAvatar, form)
-        openModalEditUser(formContainer)
+    const buttonSubmit = document.createElement("button");
+    buttonSubmit.classList = "button-submit-update font-5-semibold";
+    buttonSubmit.type = "submit";
+    buttonSubmit.innerText = "Alterar";
 
-    })
+    form.append(EditDescription, inputName, inputAvatar, buttonSubmit);
+    formContainer.append(perfilAvatar, form);
+    openModalEditUser(formContainer);
+  });
 }
 
-
-
-
-
-function logout(){
-    const logout = document.querySelector(".logout")
-
-    logout.addEventListener("click", () => {
-        localStorage.clear()
-        window.location.replace("../login/index.html")
-    })
-}
-
-
-
-
-
-
-
-
-renderMyProfile()
-renderAllMyPets()
-userInfoToUpdate()
-logout()
-
-
-
-
+renderMyProfile();
+renderAllMyPets();
+userInfoToUpdate();
+logout();

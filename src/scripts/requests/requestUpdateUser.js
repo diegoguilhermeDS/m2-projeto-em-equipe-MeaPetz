@@ -1,3 +1,4 @@
+import { toast } from "../toast.js"
 import { baseUrl } from "./readAllMyPets.js"
 
 async function updateUser(body){
@@ -14,13 +15,14 @@ async function updateUser(body){
 
         if(request.ok){
             const response = await request.json()
+            toast("Sucesso!", "Alteração feita com sucesso.")
 
             return response
         }else{
-            console.log(request)
+            toast("Error!", "Ops! algo deu errado.")
         }
-    }catch(err){
-            console.log(err)
+    }catch(error){
+            toast("Error!", error)
     }
 }
 

@@ -2,6 +2,7 @@ import { darkMode } from "./darkMode.js";
 import { iconHome, iconUser, iconLogout } from "./icons.js";
 import { logout } from "./logout.js";
 
+
 const itemsMenu = [
     {
         html: iconHome,
@@ -50,5 +51,6 @@ function menu() {
 
     logout()
 }
+
 
 export { menu };
