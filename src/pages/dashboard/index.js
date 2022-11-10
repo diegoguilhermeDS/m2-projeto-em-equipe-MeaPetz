@@ -20,9 +20,6 @@ async function renderMyProfile(){
 }
 
 
-
-
-
 async function renderAllMyPets(){
     const localRender = document.querySelector(".mainList");
 
@@ -35,7 +32,6 @@ async function renderAllMyPets(){
         cardPets(pet)
     });    
 }
-
 
 
 async function userInfoToUpdate(){
@@ -72,7 +68,7 @@ async function userInfoToUpdate(){
                     body[input.name] = input.value
                 }
             })
-                console.log(body)
+
                 await updateUser(body)
                 window.location.reload()
             
@@ -103,10 +99,6 @@ async function userInfoToUpdate(){
     })
 }
 
-
-
-
-
 function logout(){
     const logout = document.querySelector(".logout")
 
@@ -117,17 +109,7 @@ function logout(){
 }
 
 
-
-
-
-
-
-
 renderMyProfile()
 renderAllMyPets()
 userInfoToUpdate()
 logout()
-
-
-
-
