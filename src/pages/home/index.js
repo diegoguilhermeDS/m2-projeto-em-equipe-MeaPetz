@@ -77,7 +77,7 @@ input.addEventListener("input", async () => {
 
   const filtered = allPets.filter((pets) => {
     return pets.species.toLowerCase().includes(value);
-  });
+  })
 
   renderHomeAllPets(filtered);
 });

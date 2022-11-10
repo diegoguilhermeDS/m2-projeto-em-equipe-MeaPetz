@@ -1,6 +1,6 @@
 import { deletingPetById } from "../scripts/requests/deletePetById.js";
 import { openModalEditUser } from "./modal.js";
-// import { readingAllMyPets } from "./requests/readAllMyPets.js";
+
 
 function cardPets(pet){
     const localRender = document.querySelector(".mainList")
@@ -63,7 +63,6 @@ function cardPets(pet){
 }
 
 
-
 function profileCard(profile){
     const localRender = document.querySelector(".div-profile")
 
@@ -78,8 +77,6 @@ function profileCard(profile){
 
     localRender.append(profileImg, username)
 }
-
-
 
 
 export{

@@ -8,7 +8,6 @@ import { logout } from "../../scripts/logout.js";
 
 menu()
 
-
 async function renderMyProfile(){
     const localRender = document.querySelector(".div-profile");
 
@@ -19,9 +18,6 @@ async function renderMyProfile(){
 
     user.find(profile => profileCard(profile))   
 }
-
-
-
 
 
 async function renderAllMyPets(){
@@ -36,7 +32,6 @@ async function renderAllMyPets(){
         cardPets(pet)
     });    
 }
-
 
 
 async function userInfoToUpdate(){
@@ -73,7 +68,7 @@ async function userInfoToUpdate(){
                     body[input.name] = input.value
                 }
             })
-                console.log(body)
+
                 await updateUser(body)
                 window.location.reload()
             
@@ -104,23 +99,7 @@ async function userInfoToUpdate(){
     })
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 renderMyProfile()
 renderAllMyPets()
 userInfoToUpdate()
 logout()
-
-
-
-

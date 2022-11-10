@@ -1,5 +1,5 @@
 import { baseUrl } from "./readAllMyPets.js"
-
+import { toast } from "../toast.js"
 
 
 async function readingMyProfile(){
@@ -17,7 +17,7 @@ async function readingMyProfile(){
         return response
   
       } catch (error) {
-          console.log(error)        
+        toast("Error!", error);       
       }
 }
 
