@@ -1,3 +1,5 @@
+import { toast } from "../toast.js"
+
 async function login(body, button){
     await fetch("https://m2-api-adot-pet.herokuapp.com/session/login", {
         method: "POST",
@@ -9,30 +11,36 @@ async function login(body, button){
 
     .then(res =>{
         if(res.ok) {
+            toast("Sucesso!", "Login realizado com sucesso.")
+
+            return res.json()
+            
+        }else{
+            toast("Error!", "Ops! Algo deu errado.")
+
+            setTimeout(() => {
+                const modalToast = document.querySelector(".modal-toast")
+                modalToast.remove()
+            }, 4000)
 
             setTimeout(() => {
                 button.innerHTML = "Cadastrar"
                 button.disabled = true
             }, 1000)
 
-            return res.json()
-            
-        }else{
-            //toast(Login deu ruim!)
             res.json().then(res => res.message)
         }
     })
     
     .then(res => {
 
-        //toast ("Cadastro realizado com sucesso!")
         localStorage.setItem("User", JSON.stringify(res.user))
         localStorage.setItem("Token", JSON.stringify(res.token)) 
 
         setTimeout(() => {
             
             window.location.replace("../home/index.html")
-        },3000)
+        },4000)
     })
 }
 

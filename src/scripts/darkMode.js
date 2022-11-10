@@ -1,5 +1,8 @@
 import { iconMoon, iconSun } from "./icons.js";
 
+
+
+
 function darkMode(btn) {
     btn.classList.add("btn-icon-darkmode");
     btn.innerHTML = iconMoon;
@@ -15,6 +18,7 @@ function darkMode(btn) {
     }
 
     btn.addEventListener("click", () => {
+        btn.classList.toggle("dark-mode-color")
         if (!html.classList.contains("dark-mode")) {
             document.documentElement.classList.add("dark-mode");
             btn.innerHTML = iconSun;
@@ -26,5 +30,4 @@ function darkMode(btn) {
         }
     });
 }
-
 export { darkMode };

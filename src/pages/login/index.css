@@ -56,8 +56,8 @@ p{
     line-height: 2.5rem;
 }
 
-a{
-    color: var(--color-brand-100);
+#redirect-register{
+    color: #5188db;
     font-size: var(--font-size4);
     font-weight: 600;
 }
@@ -117,9 +117,10 @@ a{
         margin: 0 8rem 7rem 0;
     }
 
-    #moon-btn > svg > path {
+    .dark-mode-color > svg > path {
         fill: var(--color-brand-100);
     }
+
     #moon-btn{
         position: relative;
         left: 65rem;

@@ -79,7 +79,7 @@ header {
         position: relative;
     }
 
-    #dark-mode > svg > path {
+    .dark-mode-color > svg > path {
         fill: var(--color-brand-100);
     }
 
