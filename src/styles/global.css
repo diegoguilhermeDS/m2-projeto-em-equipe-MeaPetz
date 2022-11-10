@@ -66,6 +66,10 @@
     margin: 0 auto;
 }
 
+.color-test{
+  color: var(--color-test);
+}
+
 @media (min-width: 700px) {
   .container {
     max-width: 75rem;

@@ -60,6 +60,8 @@
 
 :disabled {
     opacity: 40%;
+    cursor:default;
+    pointer-events: none;
 }
 
 .btn-icon-darkmode {
