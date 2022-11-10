@@ -1,8 +1,6 @@
 import { darkMode } from "../../scripts/darkMode.js"
 import { eventButtonDisabled } from "../../scripts/eventButtonDisabled.js"
 import { register } from "../../scripts/requests/requestRegister.js"
-import { toast } from "../../scripts/toast.js"
-
 
 function toHome() {
     const btnToHome = document.getElementById("to-home")
@@ -14,7 +12,6 @@ function toHome() {
         }, 700)
     })
 }
-
 
 function eventRegister() {
     const formRegister = document.querySelector("#form-register")
