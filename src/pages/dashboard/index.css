@@ -54,7 +54,6 @@ body{
     flex-wrap: wrap;
 }
 
-
 .card{
     background-color: var(--color-grey-400);
     width: 90%;
@@ -79,7 +78,6 @@ body{
 .pet-name, .pet-species{
     color: var(--color-text-card);
 }
-
 
 .div-pet-profile{
     width: 4.375rem;
@@ -130,31 +128,27 @@ body{
     padding: 5%;
 }
 
-
-
 @media(min-width: 700px){
     .header{
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
+        padding: 3rem;
         height: 8.75rem;
-        position: fixed;
-        top: 22%;
-        left: 5%;
-        width: 90vw;
+        width: 57rem;
+        margin: 0 auto;
         border-radius: .625rem;
     }
+
     .div-profile{
         width: 40%;
-        position: absolute;
         flex-direction: row;
-        top: 12%;
-        left: 5%;
+        margin-top: 152px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around
     }
+
     .edit-user{
-        position: absolute;
-        top: 40%;
-        left: 90%;
+      width: 20px;
+      margin: 0.5rem 0 0 47rem;
     }
 
     .main{
@@ -179,10 +173,18 @@ body{
         width: 4.375rem;
     }
     .card{
-        width: 43%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 17rem;
+        background-color: var(--color-white);
+        border-radius: .625rem;
+        min-width: 25rem;
+        padding: 1.5rem;
     }
     .mainList{
-        gap: 4%;
+        width: 57rem;
+        margin: 0 auto;
         overflow: scroll;
         height: 50vh;
     }
