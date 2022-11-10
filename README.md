@@ -5,12 +5,6 @@
 # :pencil: Descrição
 Projeto desenvolvido em grupo e proposto pela Kenzie Academy Brasil. Este projeto foi desenvolvido desde o design (com Figma) até o consumo da API
 
-Desenvoldores:
-
-🦴  Maikol Santos
- * [GitHub]()
- * [LinkedIn]()
-
 #  :art: Layout 
 
 ## 🦴 Moblie
@@ -32,6 +26,12 @@ Desenvoldores:
 ## 🦴 Dashboard
 
 <div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/Dashboard%20page.png"></div>
+
+# 💻 Desenvoldores:
+
+🦴  Maikol Santos
+ * [GitHub]()
+ * [LinkedIn]()
 
 ## :link: Link para o Projeto
 [MeaPetz]()
