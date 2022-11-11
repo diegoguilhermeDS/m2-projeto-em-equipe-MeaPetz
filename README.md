@@ -3,9 +3,17 @@
 <div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/Mea%20Petz.png"></div>
 
 # :pencil: Descrição
-Projeto desenvolvido em grupo e proposto pela Kenzie Academy Brasil. Este projeto foi desenvolvido desde o design (com Figma) até o consumo da API.
 
-Esse foi o primeiro projeto desenvolvido em grupo. Ao trabalharmos em grupo aprendemos com os erros e sentimos a satisfação/alegria de muitos acertos.
+Mea Petz é um um site com o objetivo de promover a adoção de animais. Algumas funcionalidades são a realização o cadastro do usuário, login e adoção de animais.
+
+O projeto foi desenvolvido com o intuito de praticar o consumo de APIs, conceitos de GitFlow e construção de CRUD manipulada pelo Javascript, proposto pela Kenzie Academy Brasil.
+
+Ainda, foram empregados conhecimentos de HTML, CSS. Sendo que o design foi estruturado com o suporte do Figma.
+
+Outras funcionalidades do projeto:
+- Notificações por toasts
+- DarkMode
+- Manipulação de JWT
 
 
 #  :art: Layout 
