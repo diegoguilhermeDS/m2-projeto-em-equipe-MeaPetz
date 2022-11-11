@@ -40,5 +40,9 @@ Esse foi o primeiro projeto desenvolvido em grupo. Ao trabalharmos em grupo apre
 * [GitHub](https://github.com/diegoguilhermeDS)
 * [LinkedIn](https://www.linkedin.com/in/diego-guilherme-616410200)
 
+🦴 Jacqueline Kajiya
+* [GitHub](https://github.com/JacqueKajiya)
+* [LinkedIn](https://www.linkedin.com/in/jacqueline-kajiya-83b359111/)
+
 ## :link: Link para o Projeto
 [MeaPetz](https://upgraded-dollop-314b6095.pages.github.io/src/pages/login/index.html)
