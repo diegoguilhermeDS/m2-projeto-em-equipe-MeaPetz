@@ -8,7 +8,7 @@ function toast (status, message){
     icon.alt = `Mensagem de ${status}`
     
     const msg = document.createElement("h3")
-    msg.classList.add("font-4-semibold", "white")
+    msg.classList.add("font-4-semibold")
     msg.innerText = message
 
     if (status == "Sucesso!"){
