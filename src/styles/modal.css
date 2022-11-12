@@ -90,6 +90,10 @@
     width: 100%;
 }
 
+.modal-toast .font-4-semibold {
+    color: var(--color-bg-card) !important;
+}
+
 .modal-toast > img {
     width: 20px;
     height: 20px;
