@@ -52,5 +52,9 @@ Outras funcionalidades do projeto:
 * [GitHub](https://github.com/JacqueKajiya)
 * [LinkedIn](https://www.linkedin.com/in/jacqueline-kajiya-83b359111/)
 
+🦴 Gabriel Andrade
+* [GitHub](https://github.com/imgabrie1)
+* [LinkedIn](https://www.linkedin.com/in/gabriel-andrade-0487ba21b/)
+
 ## :link: Link para o Projeto
 [MeaPetz](https://upgraded-dollop-314b6095.pages.github.io/src/pages/login/index.html)
