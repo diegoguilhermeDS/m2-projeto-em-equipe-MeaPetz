@@ -8,7 +8,7 @@ function toHome() {
     btnToHome.addEventListener("click", () => {
         document.body.style.cursor = 'wait'
         setTimeout(() => {
-            location.replace("../login/index.html")
+            location.replace("../../../index.html")
         }, 700)
     })
 }

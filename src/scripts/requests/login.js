@@ -39,7 +39,7 @@ async function login(body, button){
 
         setTimeout(() => {
             
-            window.location.replace("../home/index.html")
+            window.location.replace("/src/pages/home/index.html")
         },4000)
     })
 }

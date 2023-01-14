@@ -10,7 +10,7 @@ function goRegisterPage() {
     redirectBtn.addEventListener("click", (e) => {
         e.preventDefault()
         setTimeout(() => {
-            window.location.replace("../register/index.html")
+            window.location.replace("src/pages/register/index.html")
         }, 1000)
     })
 }
@@ -32,7 +32,7 @@ function loginForm(){
         })
 
         loginBtn.innerHTML = `
-        <img class="icon-search" src="../../assets/img/spinner.png" alt="icone de procura">
+        <img class="icon-search" src="/src/assets/img/spinner.png" alt="icone de procura">
         `
 
         login(body, loginBtn)
